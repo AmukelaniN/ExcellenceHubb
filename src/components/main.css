@@ -1,0 +1,464 @@
+/* Header Styles */
+:root {
+    --primary: #2f80ed; /* Excellence blue (used for main CTA and login) */
+    --accent: #f39c12;  /* Excellence orange (logo accent) */
+    --cta: #2bbf9f;     /* secondary CTA / join as company color */
+    --dark: #333333;
+    --muted: #666666;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;   /* keeps header centered and neat */
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px; /* cleaner spacing */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    transition: 0.3s ease;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: var(--primary);
+}
+
+/* Active nav link */
+.active {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* button styled like link for sign up */
+.link-button {
+    background: transparent;
+    border: none;
+    color: var(--dark);
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1rem;
+}
+.link-button:hover { color: var(--primary); }
+
+/* Mobile menu button (hamburger icon) */
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.btnlogin{
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(47, 128, 237, 0.12);
+    transition: filter 0.15s ease, transform 0.12s ease;
+}
+
+.btnlogin:hover {
+    filter: brightness(0.95);
+    transform: translateY(-1px);
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        background: #fff;
+        width: 200px;
+        padding: 20px 0;
+        gap: 20px;
+        transition: 0.3s ease-in-out;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    nav ul.show {
+        right: 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        color: var(--primary);
+    }
+}
+
+/* Modal styles for LoginModal */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.modal {
+    background: #fff;
+    width: 90%;
+    max-width: 480px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.input-row {
+     display: flex;
+     gap: 16px;
+     margin-bottom: 12px;
+}
+
+.input-row label {
+    flex: 1;
+}
+
+/* Password toggle styles */
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 68px; /* leave space for the toggle */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+.password-toggle:focus {
+    outline: 2px solid rgba(47,128,237,0.18);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-header h3 { margin: 0; }
+
+.modal-close {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 20px 20px;
+}
+
+.modal-body label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.modal-body input {
+    margin-top: 6px;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 6px;
+}
+
+.btn-primary {
+    background: var(--primary, #2f80ed);
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Sign Up Modal Specific Styles */
+.signup-modal {
+    max-width: 500px !important;
+    padding: 2rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.18s, transform 0.12s;
+    margin-top: 1.5rem;
+    box-sizing: border-box;
+}
+
+.signup-btn:hover {
+    filter: brightness(0.95);
+    transform: translateY(-1px);
+}
+
+.modal-body input:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(47, 128, 237, 0.08);
+}
+
+.signup-modal input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.signup-modal input:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(47, 128, 237, 0.08);
+}
+
+.signup-modal label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+    .modal { width: 95%; }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .signup-modal {
+        padding: 1.5rem;
+    }
+    .input-row {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 0;
+    }
+}
+
+/* Home / Hero styles */
+.hero {
+    min-height: 80vh; /* fill most of the viewport */
+    position: relative;
+    margin-top: 60px; /* account for fixed header */
+    color: #fff;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(26, 79, 139, 0.85), rgba(26, 79, 139, 0.85)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1920') no-repeat center center/cover;
+    background-size: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* keep overlay subtle since gradient is already on the background image */
+    background: rgba(26, 79, 139, 0.18);
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 3;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0 0 14px;
+    font-weight: 800;
+    line-height: 1.08;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.hero .lead {
+    max-width: 780px;
+    margin: 0 auto 28px;
+    opacity: 0.95;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.hero-ctas {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.hero-ctas .cta {
+    display: inline-block;
+    padding: 18px 36px; /* larger click area */
+    border-radius: 5px; /* requested radius */
+    font-weight: 700;
+    font-size: 1.15rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(12,24,48,0.08);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.hero-ctas .cta:focus {
+    outline: 3px solid rgba(47,128,237,0.18);
+    outline-offset: 2px;
+}
+
+.hero-ctas .cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(12,24,48,0.12);
+}
+
+.btn-cta { background: var(--cta); color: #fff; border-radius: 5px; }
+.btn-accent { background: var(--accent); color: #fff; border-radius: 5px; }
+.btn-primary { background: var(--primary); color: #fff; border-radius: 5px; }
+
+/* Features/cards */
+@keyframes cardShake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-1deg); }
+    75% { transform: rotate(1deg); }
+}
+
+.features {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+.features h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--primary);
+    margin-bottom: 50px;
+}
+.cards {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    padding: 0 20px;
+}
+.card {
+    background: #fff;
+    padding: 34px 22px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(16, 24, 40, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+    animation: cardShake 0.5s ease-in-out;
+    box-shadow: 0 12px 40px rgba(16, 24, 40, 0.1);
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 36px;
+    margin-bottom: 14px;
+}
+.card h4 { margin: 8px 0 10px; color: var(--primary); }
+.card p { color: #555; font-size: 0.95rem; }
+
+@media (max-width: 900px) {
+    .cards { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 1.9rem; }
+}
