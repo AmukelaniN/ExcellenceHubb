@@ -10,11 +10,11 @@ This system aims to create an integrated ecosystem that supports growth, collabo
 
 ---
 
-## 🚨 Problem Statement
+##  Problem Statement
 
 A widening gap exists between students seeking opportunities, professionals looking to share their expertise, and companies searching for skilled talent. 
 
-Currently, bursary information, career resources, and job opportunities are scattered across multiple platforms, making access difficult and inefficient. Companies also struggle to build sustainable talent pipelines.
+Currently, bursary information, career resources, and job opportunities are scattered across multiple platforms, making access difficult and inefficient. Companies also struggle to build sustainabe talent pipelines.
 
 Without an integrated system, valuable opportunities for mentorship, recruitment, and collaboration are missed.
 
