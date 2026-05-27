@@ -10,6 +10,7 @@ import About from './components/About';
 
 
 
+
 function App() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isSignUpOpen, setIsSignUpOpen] = useState(false);
@@ -30,7 +31,9 @@ function App() {
           <Route index element={<Home />} />
           
           {/*  <Route path="/Plots" element={<Plots />} /> */}
-           <Route path="/about" element={<About/>} />
+           <Route path="/About" element={<About/>} />
+          
+           
         </Routes>
       </BrowserRouter>
 

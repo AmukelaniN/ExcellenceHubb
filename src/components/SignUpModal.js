@@ -72,7 +72,7 @@ const SignUpModal = ({ isOpen, onClose }) => {
               value={formData.email}
               onChange={handleChange}
               required
-              placeholder="you@example.com"
+              placeholder="email@example.com"
             />
           </label>
 

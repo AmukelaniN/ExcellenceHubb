@@ -32,7 +32,7 @@ function LoginModal({ isOpen, onClose }) {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              placeholder="you@example.com"
+              placeholder="email@example.com"
             />
           </label>
 
