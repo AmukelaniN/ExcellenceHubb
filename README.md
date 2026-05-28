@@ -44,7 +44,7 @@ The school has a clear vision, mission and values.
 - Team member profiles
 - Advisory board (future)
 
-  # Services Module
+  ## Services Module
 
  For Students:
 - Academic support resources
@@ -67,32 +67,32 @@ This is a job board which has the search feature and filters.
 - Company dashboard
 - AI-driven CV matching
 
-  # Media Hub
+  ## Media Hub
 - Podcasts & interviews
 - Blog articles
 - Newsletter archive
 - Events gallery
 
-  # Events Module
+  ## Events Module
 - Upcoming workshops
 - Event registration
 - CRM integration
 
-  # Get Involved
+  ## Get Involved
 - Sponsorship application
 - Recruitment partnership form
 - Volunteer & mentor forms
 
-  # Contact Us
+  ## Contact Us
 - Contact form
 - Social media links
 - Newsletter signup
 
-  # Member Portal
+  ## Member Portal
 - Student dashboard
 - Company dashboard
 
-  # Tech Stack (Planned)
+  ## Tech Stack (Planned)
 
 - ASP.NET Core Web API
 - React.js (Frontend)
@@ -100,24 +100,24 @@ This is a job board which has the search feature and filters.
 - Entity Framework Core
 - HubSpot CRM Integration
 
- # Future Enhancements
+ ## Future Enhancements
 
 Job matching system that leverages artificial intelligence.
 - Advanced analytics dashboard
 - Mobile application version
 - Premium subscription model
 
- # Target Users
+ ## Target Users
 
 - High school & university students
 - Graduates & young professionals
 - Universities & academic institutions
 - Corporate recruiters & sponsors
 
-## Author
-AMUKELANI LYCON NDHOVE
-BSc Information Technology – Graduate  
-In the centre of Software Development & Digital Solutions
+# Author
+## AMUKELANI LYCON NDHOVE
+## BSc Information Technology in Computer Science & Informatics – Graduate  (University of Johannesburg)
+
 
 ---
 
