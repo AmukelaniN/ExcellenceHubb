@@ -1,96 +1,98 @@
+## PLEASE NOTE: PROJECT COMPLETION WAS DELAYED DUE TO LIMITED ACCESS TO A PERSONAL COMPUTER (LAPTOP), WHICH IMPACTED DEVELOPMENT TIMELINES.
+
 # Excellence Hub
 
-## Project Overview 
+ ## Project Overview 
 
-Excellence Hub is a centralized online platform designed to bridge the gap between students, professionals, and companies. 
+Excellence Hub is an online, centralized platform that connects students, professionals and companies. 
 
-The platform provides students with access to bursaries, career resources, mentorship, and job opportunities, while offering companies and industry professionals a reliable recruitment pipeline and branding opportunities.
+The platform offers bursaries, career resources, mentorship and job opportunities to students, and a reliable recruitment pipeline and branding opportunity for companies and industry professionals.
 
-This system aims to create an integrated ecosystem that supports growth, collaboration, and career development.
-
----
-
-##  Problem Statement
-
-A widening gap exists between students seeking opportunities, professionals looking to share their expertise, and companies searching for skilled talent. 
-
-Currently, bursary information, career resources, and job opportunities are scattered across multiple platforms, making access difficult and inefficient. Companies also struggle to build sustainabe talent pipelines.
-
-Without an integrated system, valuable opportunities for mentorship, recruitment, and collaboration are missed.
+The goal of this system is to build an integrated ecosystem to enable growth, collaboration, and career development.
 
 ---
 
-##  Proposed Solution
+  ## Problem Statement
 
-The Excellence Hub is a centralized digital platform that:
+There is a growing disconnect between opportunity seekers, experts and employers. 
 
-- Connects students with bursaries, vacancies, and mentorship
-- Enables professionals to share industry insights and host workshops
-- Provides companies with recruitment tools and access to emerging talent
-- Supports events, media content, and networking opportunities
+Bursary details, career resources and job opportunities are currently available on various platforms, which makes it difficult and inefficient to access. Organizations also have a challenge in developing sustainable talent pools.
 
-## Functional Requirements
+These opportunities for mentorship, recruitment and collaboration are lost without an integrated system.
 
-###  Home Page
-- Hero section with Call-To-Action buttons
-- Quick links to bursaries and vacancies
+---
+
+  ## Proposed Solution
+
+The Excellence Hub is a single, digital hub that:
+
+- Links students to bursaries, positions, mentors
+- Provides professionals with the opportunity to share industry expertise and conduct workshops.
+- Supplies companies with recruitment tools and entry to rising talent.
+- Promotes events, media coverage and networking opportunities
+
+# Functional Requirements
+
+ ## Home Page
+- Hero section with CTAs.- Hero CTA buttons.
+- Links to vacancies and bursaries
 - Embedded intro video
 - Testimonials section
 
-###  About Us
-- Vision, mission, and values
+  About Us
+The school has a clear vision, mission and values.
 - Team member profiles
 - Advisory board (future)
 
-###  Services Module
+  # Services Module
 
-#### For Students:
+ For Students:
 - Academic support resources
-- Career services (CV building, interview prep)
+- Career Services (CV Preparing, Interview Practice)
 - Newsletter subscriptions
 
-#### For Professionals & Universities:
+ For Professionals & Universities:
 - Industry insights
 - Virtual workshops & symposiums
 - Mentorship & networking
 
-#### For Companies & Sponsors:
+ For Companies & Sponsors:
 - Post jobs & internships
 - Access CV database
 - Sponsorship management
 
-### Recruitment Platform (Future Scope)
-- Job board with search & filters
+ HRMS: Future Scope is a recruitment platform.
+This is a job board which has the search feature and filters.
 - CV upload system
 - Company dashboard
 - AI-driven CV matching
 
-###  Media Hub
+  # Media Hub
 - Podcasts & interviews
 - Blog articles
 - Newsletter archive
 - Events gallery
 
-###  Events Module
+  # Events Module
 - Upcoming workshops
 - Event registration
 - CRM integration
 
-###  Get Involved
+  # Get Involved
 - Sponsorship application
 - Recruitment partnership form
 - Volunteer & mentor forms
 
-###  Contact Us
+  # Contact Us
 - Contact form
 - Social media links
 - Newsletter signup
 
-###  Member Portal
+  # Member Portal
 - Student dashboard
 - Company dashboard
 
-##  Tech Stack (Planned)
+  # Tech Stack (Planned)
 
 - ASP.NET Core Web API
 - React.js (Frontend)
@@ -98,14 +100,14 @@ The Excellence Hub is a centralized digital platform that:
 - Entity Framework Core
 - HubSpot CRM Integration
 
-## Future Enhancements
+ # Future Enhancements
 
-- AI-powered job matching system
+Job matching system that leverages artificial intelligence.
 - Advanced analytics dashboard
 - Mobile application version
 - Premium subscription model
 
-## Target Users
+ # Target Users
 
 - High school & university students
 - Graduates & young professionals
@@ -114,11 +116,11 @@ The Excellence Hub is a centralized digital platform that:
 
 ## Author
 AMUKELANI LYCON NDHOVE
-BSc Information Technology Graduate  
-Focused on Software Development & Digital Solutions
+BSc Information Technology – Graduate  
+In the centre of Software Development & Digital Solutions
 
 ---
 
-##  License
+ ## License
 
-This project is currently under development.
+This project is in the process of being developed.
