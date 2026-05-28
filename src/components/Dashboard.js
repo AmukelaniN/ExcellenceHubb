@@ -1,6 +1,16 @@
-function Dashboard()
+import Sidebar from "./Sidebar";
+
+export default function Dashboard()
 {
     return(
-        <h1>Hello world</h1>
+ 
+ <>
+ <div className="dashboard-layout">
+    
+    <Sidebar />
+   
+ </div>
+ </>
+        
     )
 }

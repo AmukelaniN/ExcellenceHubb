@@ -5,9 +5,10 @@ import Home from './components/Home';
 import LoginModal from './components/LoginModal';
 import SignUpModal from './components/SignUpModal';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from './components/About';
 
-
+import Dashboard from "./components/Dashboard";
+import About from "./components/About";
+import Sidebar from "./components/Sidebar";
 
 
 
@@ -31,9 +32,10 @@ function App() {
           <Route index element={<Home />} />
           
           {/*  <Route path="/Plots" element={<Plots />} /> */}
-           <Route path="/About" element={<About/>} />
-          
-           
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path= "/About" element={<About/>}/>
+          <Route path="/Sidebar" element={<Sidebar/>} />
+
         </Routes>
       </BrowserRouter>
 
