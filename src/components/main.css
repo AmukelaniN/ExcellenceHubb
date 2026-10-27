@@ -581,3 +581,11 @@ nav ul li a:hover {
     display: flex;
     padding-top: 70px; /* adjust to your header height */
 }
+nav ul li button.nav-action { background:transparent; border:0; padding:0; color:var(--dark); font:inherit; cursor:pointer; }
+nav ul li button.nav-action:hover { color:var(--primary); }
+nav ul li button.btnlogin { border:0; font:inherit; font-weight:600; cursor:pointer; }
+.hero-ctas button.cta { cursor:pointer; font-family:inherit; }
+.demo-login-note { margin:0; padding:10px 12px; border-radius:6px; color:#65553e; background:#fbf3e8; font-size:.78rem; line-height:1.5; }
+
+.auth-form-error { margin:0; padding:9px 11px; border:1px solid #f0c9c2; border-radius:7px; color:#9a3d2c; background:#fff5f3; font-size:.74rem; line-height:1.45; }
+.modal-footer button:disabled { opacity:.65; cursor:wait; }
